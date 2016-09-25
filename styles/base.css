@@ -1,0 +1,142 @@
+@charset "utf-8";
+/**********************css reset**********************/
+*{ font-family: "Microsoft YaHei";}
+body,h1,h2,h3,h4,h5,h6,p, /* basic */
+blockquote,pre,hr, /* formatting */ 
+form,input,textarea,button,fieldset,legend, /* forms */
+ul,ol,li,dl,dt,dd, /* lists */
+th,td, /* tables */
+div { /* styles */
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+caption, th {
+	text-align:left;
+}
+fieldset,img{ 
+	border:0; 
+}
+img{ 
+	vertical-align:middle; outline:none; 
+}
+ol,ul{ 
+	list-style:none; 
+}
+h1,h2,h3,h4,h5,h6{ 
+	font-size:100%; font-weight:normal;
+}
+body{ 
+	width:100%; height:100%;
+}
+button,label,.pointer{
+	cursor:pointer;
+}
+*:focus {
+	outline: none;
+}
+a:link,
+a:visited{
+  text-decoration:none;
+}
+a:hover,
+a:active{
+  text-decoration:none;
+}
+
+/**********************text select effect**********************/
+::selection {
+	background:#ff0044;
+	color:#FFF;
+}
+::-moz-selection {
+	background:#ff0044;
+	color:#FFF;
+}
+::-webkit-selection {
+	background:#ff0044;
+	color:#FFF;
+}
+
+/**********************CSS2.1&CSS3.0 component**********************/
+/*clear float*/
+.clear {
+	clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0;
+}
+.hidden{ display: none;}
+/*0.4s transition*/
+.transition{ 
+	-webkit-transition: all 0.2s ease;  -moz-transition: all 0.2s ease;  -o-transition: all 0.2s ease;
+}
+/*border 1px*/
+.border_1px_solid{ 
+	border: 1px solid #CECED0;
+}
+.border_10px_solid{ 
+	border: 10px solid #e8e8ea;
+}
+/*border radius 2px*/
+.border_radius_2px{ 
+	-moz-border-radius:5px;-webkit-border-radius:5px;
+}
+.border_radius_15px{ 
+	-moz-border-radius:15px;-webkit-border-radius:15px;
+}
+/*box shadow 5px*/
+.box_shadow_5px{
+	-webkit-box-shadow: 2px 2px 5px #a9a9aa;  -moz-box-shadow: 2px 2px 5px #a9a9aa; box-shadow: 2px 2px 5px #a9a9aa;
+}
+.box_shadow_insert{
+	-moz-box-shadow:1px 1px 2px #9a9a9a inset; -webkit-box-shadow:1px 1px 2px #9a9a9a inset; box-shadow:1px 1px 2px #9a9a9a inset; 
+}
+/*opaticy 0.5*/
+.opaHalf{ opacity: 0.5; filter:alpha(opacity=50); }
+
+
+/**********************common template*************************/
+/*body style*/
+body{ background-color: #f2f2f2; font-size: 12px; color: #555555; }
+
+/*header and footer style*/
+#banner,#footer{ width: 100%; height: 115px; background-color:#c6063a;}
+#banMid,#footerMid{ margin:0 auto; width:980px; height: 115px; display: block;}
+#banMid h1,#footerMid h1{ font-size: 40px; color:#FFF; margin-top:20px; float:left;}
+#banMid p,#footerMid p{  color:#FFF; float:left; margin-left:-120px;}
+#banMid p{ font-size: 16px; margin-top:70px;}
+#banMid span{ float:right; margin-top:75px; font-size:16px; color:#fff;}
+#footerMid p{ font-size: 12px; margin-top:75px;}
+#footerMid ul{ float:left; display:block; color:#FFF; margin-top:35px; margin-left:40px;}
+/*导航栏样式*/
+#mainNav{ width: 100%; height: 43px; background-image: url(../images/mainNavBg.jpg);}
+#mainNav ul{ margin:0 auto; width:980px; height: 40px;}
+#mainNav ul li{ float: left;}
+#mainNav ul li a{ width:80px; height:27px; text-align: center; padding-top: 13px; display: block; color:#555555;}
+#mainNav ul li a:hover{ background-color: #c6063a; color:#FFF;}
+
+/*totop的全局样式*/
+.backToTop {
+    display: none;
+    width: 18px;
+    line-height: 1.2;
+    padding: 10px 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    _position: absolute;
+    right: 10px;
+    bottom: 30px;
+    _bottom: "auto";
+    cursor: pointer;
+    opacity: .6;
+    filter: Alpha(opacity=60);
+}
+.backToTop:hover{
+	opacity: .5;
+    filter: Alpha(opacity=50);
+}
+
